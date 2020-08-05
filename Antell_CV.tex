@@ -32,17 +32,18 @@
 \homepage{gwenantell.com}                    
 %\social[linkedin]{john.doe}                 
 \social[twitter]{GwenAntell}        
-% \social[github]{GwenAntell}        
+%\social[github]{GwenAntell}        
 % \extrainfo{additional information}    
 \photo[64pt][0.4pt]{Antell_profile_small}              % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 % \quote{Some quote}     
 
-\usepackage[backend=bibtex,isbn=false,bibstyle=numeric,sorting=none]{biblatex} 
+\usepackage[backend=bibtex, isbn=false, bibstyle=numeric, sorting=none, defernumbers=true, maxbibnames=5]{biblatex} 
 \bibliography{presentations_publications.bib}
 
 % bibliography with mutiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
+
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -51,7 +52,7 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2017--Present}{DPhil}{University of Oxford}{UK}{}{Department of Earth Sciences}  % arguments 3 to 6 can be left empty
+\cventry{2017--Present}{DPhil}{University of Oxford}{UK}{}{Departments of Earth Sciences and Zoology}  % arguments 3 to 6 can be left empty
 \cventry{2012--2016}{B.S. Science}{Yale University}{USA}{\textit{magna cum laude}}{Ecology \& Evolutionary Biology and Geology \& Geophysics}
 
 \section{PhD thesis}
@@ -76,8 +77,9 @@ Labs, tutorials, and field courses about evolution and past environments.}
 
 
 \section{Leadership}
-\cvlistitem{St John's College, Middle Common Room Committee, \textbf{President} 2018-2019, \textbf{Diversity officer} 2017--2018}
-\cvlistitem{\textbf{Women’s Leadership Forum discussion leader,} St John’s College,  February--March 2018}
+\cvlistitem{Working group on racial equality, diversity, and inclusion in Department of Earth Sciences, University of Oxford, \textbf{Co-chair} 2019-2020}
+\cvlistitem{St John's College, Middle Common Room Committee (graduate student body), \textbf{President} 2018-2019, \textbf{Diversity officer} 2017--2018}
+\cvlistitem{\textbf{Women's Leadership Forum discussion leader,} St John's College,  February--March 2018}
 \cvlistitem{\textbf{Representative} for Earth Sciences postgraduates, Divisional Joint Consultative Committee, 2018--2019}
 \cvlistitem{\textbf{Representative} for postgraduate women, Workplace and Equality Committee, Dept. of Earth Sciences, U. of Oxford, 2017--2019}
 \cvlistitem{Yale Ecology and Evo.\ Bio.\ Group, 2013--2016, \textbf{President} 2015--2016}
@@ -86,16 +88,17 @@ Labs, tutorials, and field courses about evolution and past environments.}
 
 % bibliography
 \nocite{*}
-\printbibliography[type=article, title={Publications}] % , resetnumbers=true
-\printbibliography[type=inproceedings, title={Oral presentations}, resetnumbers=true] 
+\printbibliography[type=article, title={Peer-reviewed publications}] % , resetnumbers=true
+\printbibliography[type=inproceedings, title={Talks}, resetnumbers=true] 
 
 \section{Awards}
 \subsection{Scholarships}
 \cvitemwithcomment{}{Clarendon Fund Scholarship}{2017--Present}
+\cvitemwithcomment{}{St John's College Alumni Scholarship}{2017--Present}
 \cvitemwithcomment{}{NSF Graduate Research Fellowship Program (declined)}{2017}
 \cvitemwithcomment{}{Jerry (1953) and Jackie Inskeep Scholarship Fund}{2013-2016}
-\cvitemwithcomment{}{Summer Environmental Fellowship (\$1,300)}{2014}
-\cvitemwithcomment{}{US National Merit Scholarship (\$2,500)}{2012}
+\cvitemwithcomment{}{Summer Environmental Fellowship, Yale U.}{2014}
+\cvitemwithcomment{}{US National Merit Scholarship}{2012}
 \subsection{Grants}
 \cvitemwithcomment{}{Burdett-Coutts Grant, Earth Sciences, U. of Oxford (\pounds 1,650)}{2019}
 \cvitemwithcomment{}{Postgraduate Special Grant, St John's College (\pounds 1,250)}{2018}
@@ -105,15 +108,17 @@ Labs, tutorials, and field courses about evolution and past environments.}
 \cvitemwithcomment{}{Yale Science Center Int'l Fellowship (\$3,870; \$4,300)}{2014, 2015}
 \cvitemwithcomment{}{Yale Freshmen Summer STEM Research Fellowship (\$4,300)}{2013}
 \subsection{Awards}
+\cvitemwithcomment{}{Earth Sciences award for equality, diversity, \& inclusion work}{2020}
 \cvitemwithcomment{}{1st place student talk, N. Am. Palaeo. Convention}{2019}
-\cvitemwithcomment{}{D. E. Chantler Award: 'strength of character', Yale U.}{2016}
-\cvitemwithcomment{}{W. R. Belknap Prize: excellence in a biology thesis, Yale U.}{2016}
+\cvitemwithcomment{}{D. E. Chantler Award for ``strength of character,'' Yale U.}{2016}
+\cvitemwithcomment{}{W. R. Belknap Prize for excellence in a biology thesis, Yale U.}{2016}
 \cvitemwithcomment{}{1st place student speed talk, Connecticut Entomological Society}{2015}
 
 \section{Skills}
 \subsection{Software}
-\cvlistdoubleitem{ArcGIS}{R}
-\cvlistdoubleitem{Photoshop}{LaTeX}
+\cvlistdoubleitem{R}{Git}
+\cvlistdoubleitem{LaTeX}{Bash}
+\cvlistdoubleitem{Photoshop}{ArcGIS}
 \cvlistdoubleitem{Illustrator}{Microsoft Office}
 \subsection{Statistics}
 \cvlistitem{Species distribution models}
@@ -123,14 +128,15 @@ Labs, tutorials, and field courses about evolution and past environments.}
 \subsection{Field techniques}
 \cvlistdoubleitem{GPS navigation}{Cartography}
 \cvlistdoubleitem{Quadrats \& transects}{Photogrammetry}
+\cvlistdoubleitem{Live-dead analysis}{Stratigraphic measurement}
 \cvlistdoubleitem{Bird banding}{Plant, insect, \& fossil collection}
-\subsection{Museum curation}
-\cvlistitem{Specimen cataloguing, georeferencing, and imaging}
-\cvlistitem{Plaster casts and moulds of fossils}
-\cvlistitem{Insect pinning and identification}
+% \subsection{Museum curation}
+% \cvlistitem{Specimen cataloguing, georeferencing, and imaging}
+% \cvlistitem{Plaster casts and moulds of fossils}
+% \cvlistitem{Insect pinning and identification}
 
 \section{Field work}
-\cvitem{Postgraduate instructor}{Earth Sciences undergraduate field course. Isle of Arran, UK. 1 week, 2019}
+\cvitem{Postgraduate instructor}{Earth Sciences undergraduate field course. Isle of Arran, UK. 1 week, 2019, 2020 (cancelled due to COVID-19)}
 \cvitem{Postgraduate instructor}{Earth Sciences undergraduate field course. Dorset, UK. 1 week, 2018, 2019}
 \cvitem{Stratigraphic paleobiology}{Paleo.\ Society postgraduate field course. Bitterroot Mountains, MT, USA. 2 weeks, 2017}
 \cvitem{Global tectonics}{Yale U. course. Sicily, Italy. 2 weeks, 2016}
@@ -147,20 +153,25 @@ Labs, tutorials, and field courses about evolution and past environments.}
 \cvitem{Mixed-effects models and smart modelling techniques in R}{University of Oxford, 17--20 Apr 2018}
 
 \section{Access and outreach}
-\cvlistitem{Report author, `Recommendations for improving racial equality, diversity, and inclusion in the Department of Earth Sciences, University of Oxford', February 2020. Member of ad hoc working group on BAME issues.}
-\cvlistitem{`Science Short' outreach presentation, Oxford University Museum of Natural History, 4 January 2020}
+\cvlistitem{Report author, ``Recommendations for improving racial equality, diversity, and inclusion in the Department of Earth Sciences, University of Oxford,'' February 2020. \href{https://www.earth.ox.ac.uk/2020/06/department-of-earth-sciences-releases-report-of-ad-hoc-working-group-on-bame-issues/}Available at {\textit{https://www.earth.ox.ac.uk/2020/06}}.}
+\cvlistitem{``Science Short'' invited outreach presentation, Oxford University Museum of Natural History, 4 January 2020}
 \cvlistitem{Super Science Saturday activity leader, Oxford University Museum of Natural History, 9 March 2019. 3600 attendees}
 \cvlistitem{UNIQ summer school instructor, Oxford Earth Sciences; 2018, 2019}
 \cvlistitem{International Association of Geoscience Diversity, member 2018--Present}
-\cvlistitem{Oxford Disability Law and Policy Conference, 24--25 February 2018}
-\cvlistitem{Oxford ApplyED (Equality and Diversity) conference, 14 November 2017}
-
-\section{Advocacy}
-\cvitem{Edinburgh Marathon}{\pounds 750 raised for the Juvenile Diabetes Research Foundation. Sub 4-hour finishing time. 25 May 2019}
-\cvitem{March For Science}{Support of the American Geophysical Union and Paleontological Society. Activity leader for the Museum of Natural History, UC Boulder. Denver 2017, London 2018}
-\cvitem{Tough Mudder}{\$1,200 raised for the American Diabetes Association. 10-mile obstacle course and mud run. Sacramento, CA, USA. 2017}
+\cvlistitem{Oxford Disability Law and Policy Conference, February 2018}
+\cvlistitem{Oxford ApplyED (Equality and Diversity) conference, November 2017}
 
 \clearpage
+
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Erin Saupe - PhD Supervisor}{Assoc. Prof. of Palaeobiology\\ Department of Earth Sciences\\ University of Oxford\\ South Parks Road\\ Oxford OX1 3AN\\ UK\\ \emailsymbol erin.saupe@earth.ox.ac.uk\\ \phonesymbol $+$44 (0)1865 272035}
+\end{cvcolumns}
+
+\begin{cvcolumns}
+  \cvcolumn{Wolfgang Kie{\ss}ling}{Chair of Palaeontology\\ Geozentrum Nordbayern\\ Friedrich-Alexander-Universit\"at\\ Loewenichstra{\ss}e 28\\ 91054 Erlangen\\ DE\\ \emailsymbol wolfgang.kiessling@fau.de\\ \phonesymbol $+$49 9131 85-26959}
+  \cvcolumn{Roger Benson}{Prof. of Palaeobiology\\ Department of Earth Sciences\\ University of Oxford\\ South Parks Road\\ Oxford OX1 3AN\\ UK\\ \emailsymbol roger.benson@earth.ox.ac.uk\\ \phonesymbol $+$44 (0)1865 272076}
+\end{cvcolumns}
 
 \end{document}
 
