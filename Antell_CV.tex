@@ -5,19 +5,25 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,letterpaper,sans,dvipsnames]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\chead{\color{RoyalBlue}G. S. Antell}
+% \cfoot{Page \thepage\ of \pageref{LastPage}}
 
 % moderncv themes
 \moderncvstyle{fancy}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{burgundy}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 
 % adjust the page margins
-\usepackage[scale=0.78]{geometry}
+\usepackage[scale=0.78,top=1in,bottom=1in]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -50,7 +56,7 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 
-% \thispagestyle{empty}
+\thispagestyle{empty}
 
 \makecvtitle
 
@@ -88,8 +94,9 @@ Labs, tutorials, and field courses about evolution and past environments.}
 \cvitem{President}{St John's College, Middle Common Room Committee (graduate student body), 2018--2019; \textbf{Disabled students' officer} 2017--2018.}
 \cvitem{Women's Leadership Forum facilitator}{St John's College grad.\ students, 2018.}
 \cvitem{President}{Yale Ecology and Evo.\ Bio.\ Group, 2015--2016; member 2013--2016.}
-% \cvlistitem{Connecticut Entomological Society, 2013--2016, \textbf{Secretary} 2015--2016.}
+\cvitem{Secretary}{Connecticut Entomological Society, 2015--2016; member 2013--2016}
 
+\pagebreak
 
 % bibliography
 \nocite{*}
@@ -108,51 +115,62 @@ Labs, tutorials, and field courses about evolution and past environments.}
 \cvitemwithcomment{}{Burdett-Coutts Grant, Earth Sciences, of Oxford (\pounds 1,650)}{2019}
 \cvitemwithcomment{}{Postgraduate Special Grant, St John's College (\pounds 1,250)}{2018}
 \cvitemwithcomment{}{Travel Grant, Palaeontological Association (\pounds 300)}{2018}
-\cvitemwithcomment{}{E. Myer Grant, Harvard Museum of Comparative Zoology (\$1,100)}{2016}
+\cvitem{}{Ernst Mayr travel grant for animal systematics, Museum of Comparative Zoology, Harvard University (\$1,100) \hspace{18 pc} {\small \textit{2016}}}
 % \cvitemwithcomment{}{Pierson College Richter Fellowship (\$500)}{2015}
 \cvitemwithcomment{}{Yale Science Center Int'l Fellowship (\$3,870; \$4,300)}{2014, 2015}
 \cvitemwithcomment{}{Yale Freshmen Summer STEM Research Fellowship (\$4,300)}{2013}
 \subsection{Awards}
+\cvitem{}{Winifred Goldring Award for outstanding female paleontology student; conferred by Association for Women Geoscientists and Paleontological Society \hspace{3 pc} {\small \textit{2021}}}
 \cvitemwithcomment{}{1st place student talk in Geobiology \& Geomicrobiology, GSA meeting}{2020}
-\cvitemwithcomment{}{Earth Sciences award for equality, diversity, \& inclusion work}{2020}
-\cvitemwithcomment{}{1st place student talk, North American Paleo.\ Convention}{2019}
+\cvitemwithcomment{}{Oxford Earth Sciences award for equality, diversity, \& inclusion}{2020}
+\cvitemwithcomment{}{1st place student talk, North American Paleontological Convention}{2019}
 \cvitem{}{D.\ E.\ Chantler Award for ``the Yale Senior who has best exemplified qualities of courage, strength of character, and high moral purpose'' \hspace{7 pc} {\small \textit{2016}}} % Yale 
 \cvitemwithcomment{}{W. R. Belknap Prize for excellence in a biology thesis, Yale}{2016}
 \cvitemwithcomment{}{1st place student speed talk, Connecticut Entomological Society}{2015}
 % commended talk, CPEG
 
-\section{Professional training}
-\cvitem{Teaching certification}{SEDA Supporting Learning award in higher education (Descriptor 1 of  UK Professional Standards Framework), 2020.}
-\cvitem{Science communication and science policy}{``Reclaiming STEM'' 4-part workshop series, run by and for minorities in STEM. Held remotely, 2020.}
-\cvitem{Wilderness First Responder}{80-hour emergency medicine certification with wilderness upgrade, maintained valid 2017--Present.}
-\cvitem{Science communication for children}{Oxford University Museum of Natural History, workshop attended 25 Feb 2019.}
-\cvitem{STEM Ambassador training}{University of Oxford, workshop 23 Jan 2019.}
-\cvitem{University teaching}{University of Oxford, workshop attended 20 Feb 2019.}
-%\cvitem{Oxford ApplyED (Equality and Diversity) conference}{November 2017.}
-% \cvitem{Oxford Disability Law and Policy Conference}{February 2018.}
-\cvitem{RevBayes Bayesian phylogenetic inference}{U.\ Bristol, 1--3 May 2018}
-\cvitem{Mixed-effects models and smart modelling techniques in R}{University of Oxford, 17--20 Apr 2018}
+\section{Invited talks}
+\cvitem{Research seminar}{Sheffield University ecology \& conservation series, Oct 2021.}
+\cvitem{Research seminar}{Yale Earth and Planetary Sciences seminar series, May 2021.}
+\cvitem{Research seminar}{Harvard paleobiology joint lab groups (Museum of Comparative Zoology and Dept.\ Organismic \& Evolutionary Biology), Nov 2020.}
+\cvitem{EDI talk}{``Decolonizing ecology and conservation science,'' Zoological Society of London (Feb 2021) and Oxford Zoology Dept.\ (July 2020).}
+% \cvitem{Seminar invitation}{U. of Manchester; \textbf{panel discussion} at U. of Oxford, Earth Sciences. Talk on diversity and inclusion in geosciences, 2020.}
+\cvitem{Public lecture}{``Science Short'' research talk on climate change and ocean life, Oxford University Museum of Natural History, 4 Jan 2020.}
+\cvitem{Student speaker}{Oxford Geology Group annual symposium, 2019.}
+\cvitem{Alumni speaker}{Yale Peabody Museum 150th Anniversary Symposium. One of two recent student graduate speakers, Verrill Medal symposium, 2016.}
+% A coexistence story: East African Hornbill niche partitioning. Pierson College Mellon Forum, 2016
 
 \section{Software}
 \cvitem{}{Developer of \textit{kerneval} R package for kernel density estimation \href{https://github.com/GwenAntell/kerneval}{[link]}}
 
-\section{Invited talks}
-\cvitem{Research seminar}{Sheffield University ecology \& conservation series, May 2021}
-\cvitem{Research seminar}{Yale Earth and Planetary Sciences seminar series, May 2021.}
-\cvitem{Research seminar}{Harvard paleobiology joint lab groups (Museum of Comparative Zoology and Dept.\ Organismic \& Evolutionary Bio.), Nov 2020.}
-\cvitem{EDI talk}{``Decolonizing ecology and conservation science,'' Zoological Society of London (Feb 2021) and Oxford Zoology Dept.\ (July 2020).}
-% \cvitem{Seminar invitation}{U. of Manchester; \textbf{panel discussion} at U. of Oxford, Earth Sciences. Talk on diversity and inclusion in geosciences, 2020.}
-\cvitem{Public lecture}{``Science Short'' research talk on climate change and ocean life, Oxford University Museum of Natural History, 4 January 2020.}
-% OGG Palaeo Symposium
-\cvitem{Alumni speaker}{Yale Peabody Museum 150th Anniversary Symposium. One of two recent student graduate speakers, Verrill Medal symposium, 2016.}
-% A coexistence story: East African Hornbill niche partitioning. Pierson College Mellon Forum, 2016
+\section{Other writing}
+% \printbibliography[type=misc, title={Other writing}, resetnumbers=true]
+\cvitem{}{(Not peer-reviewed.)}
+\cvitem{}{S Greene, \textbf{G Antell}, \textit{et al.} ``Safety and belonging in the field: a checklist for educators.'' \textit{EarthArXiv (2021).} \href{https://doi.org/10.31223/X53P6H}{DOI: 10.31223/X53P6H}.}
+\cvitem{}{\textbf{G Antell}. ``All colours of pride.'' Rainbow Research blog series, journal of \textit{Methods in Ecology \& Evolution} (2021). \href{https://methodsblog.com/2021/06/28/rainbow-research-all-colours-of-pride/}{URL: https://methodsblog.com/2021/06/28}.}
+\cvitem{}{B Fernando and \textbf{G Antell}. ``Recommendations for improving racial equality, diversity, and inclusion in the Department of Earth Sciences, University of Oxford.'' Public report (2021). Available at: \href{https://www.earth.ox.ac.uk/2020/06/department-of-earth-sciences-releases-report-of-ad-hoc-working-group-on-bame-issues/}{\textit{https://www.earth.ox.ac.uk/2020/06}}.}
+
+\section{Professional training}
+\cvitem{Teaching certification}{SEDA Supporting Learning award in higher education (Descriptor 1 of  UK Professional Standards Framework), 2020.}
+\cvitem{Science communication and science policy}{``Reclaiming STEM'' 4-part workshop series, run by and for minorities in STEM. Held remotely, 2020.}
+\cvitem{Wilderness First Responder}{80-hour emergency medicine certification with wilderness upgrade, maintained valid 2017--Present.}
+\cvitem{Science communication for children, STEM Ambassador training, University teaching}{Individual workshops, University of Oxford, Jan--Feb 2019.}
+% \cvitem{Science communication for children}{University of Oxford Museum of Natural History, workshop attended 25 Feb 2019.}
+% \cvitem{STEM Ambassador training}{University of Oxford, workshop 23 Jan 2019.}
+% \cvitem{University teaching}{University of Oxford, workshop attended 20 Feb 2019.}
+%\cvitem{Oxford ApplyED (Equality and Diversity) conference}{November 2017.}
+% \cvitem{Oxford Disability Law and Policy Conference}{February 2018.}
+% \cvitem{RevBayes Bayesian phylogenetic inference}{U.\ Bristol, 1--3 May 2018}
+% \cvitem{Mixed-effects models and smart modelling techniques in R}{University of Oxford, 17--20 Apr 2018}
+
+\section{Service}
+\cvitem{Palaeontological Association}{Peer review for \textit{Palaeontology}. Session chair for annual meeting, 2020.}
+\cvitem{Student representative}{Departmental committees for Equality, Graduate Students, and Teaching; divisional committee for Graduates; 2017--Present. Graduate President on all St John's College committees, 2017--2018.}
 
 \section{Outreach \& advocacy}
 % \cvitem{International Assoc.\ of Geoscience Diversity}{member 2018--Present.}
-
 \cvitem{Biology LGBTQ+ Network}{Co-organiser for 2020 LGBT STEM Day symposium at Oxford (cancelled due to COVID-19). £1,000 in grant funding acquired.}
-\cvitem{Student representative}{Departmental committees for Equality, Graduate Students, and Teaching; divisional committee for Graduates; 2017--Present. Graduate President on all St John's College committees, 2017--2018.}
-\cvitem{Report author \& panelist}{Recommendations on racial \& ethnic EDI in Earth Sciences Dept., Oxford, 2020. Available at \href{https://www.earth.ox.ac.uk/2020/06/department-of-earth-sciences-releases-report-of-ad-hoc-working-group-on-bame-issues/}{\textit{https://www.earth.ox.ac.uk/2020/06}}.}
+% \cvitem{Report author \& panelist}{Recommendations on racial \& ethnic EDI in Earth Sciences Dept., Oxford, 2020. Available at \href{https://www.earth.ox.ac.uk/2020/06/department-of-earth-sciences-releases-report-of-ad-hoc-working-group-on-bame-issues/}{\textit{https://www.earth.ox.ac.uk/2020/06}}.}
 \cvitem{Activity leader}{Super Science Saturday, Oxford University Museum of Natural History, 9 March 2019. Ran activity booth with estimated 3,600 attendees.}
 \cvitem{Instructor}{UNIQ summer school, Oxford broadening access program; 2018, 2019. Designed classroom activities and assistant taught a local geology fieldtrip.}
 \cvitem{Edinburgh Marathon}{\pounds 750 raised for the Juvenile Diabetes Research Foundation, as an athlete with juvenile (type 1) diabetes. Sub 4-hour finishing time. May 2019.}
@@ -161,12 +179,11 @@ Labs, tutorials, and field courses about evolution and past environments.}
 
 \section{Field work}
 \cvitem{Graduate instructor}{Earth Sciences undergraduate field course. Isle of Arran, UK. 1 week, 2019 (2020 cancelled due to COVID-19). Mapping and interpretation.}
-\cvitem{Graduate instructor}{Earth Sciences undergrad.\ course. Dorset, UK. 1 week, 2018, 2019, 2020 (virtual). Introduction to field skills and sedimentology.}
+\cvitem{Graduate instructor}{Earth Sciences undergraduate course. Dorset, UK. 1 week, 2018, 2019, 2020 (virtual). Introduction to field skills and sedimentology.}
 \cvitem{Stratigraphic paleobiology}{Paleontological Society graduate field course. Bitterroot Mountains, MT. 2 weeks, 2017. Sequence strat.\ and logging sections.}
-\cvitem{Global tectonics}{Yale course. Sicily, Italy. 2 weeks, 2016.}
-\cvitem{Wildlife research}{Lale'enok Resource Centre, Kenya. Independent research on bird behavior (Jetz Lab). 2 months, 2015.}	
-\cvitem{Sedimentary geology}{Yale course. Barbados. 2 weeks, 2015.}
-\cvitem{Wildlife research}{Mpala Research Centre, Kenya. 3 months, 2014.}	
+% \cvitem{Global tectonics}{Yale course. Sicily, Italy. 2 weeks, 2016.}
+\cvitem{Wildlife research}{Independent research on bird behavior, Jetz Lab. Kenya: Lale'enok Resource Centre, 2 mo., 2015; Mpala Research Centre, 3 mo., 2014.}	
+% \cvitem{Sedimentary geology}{Yale course. Barbados. 2 weeks, 2015.}
 
 \end{document}
 
